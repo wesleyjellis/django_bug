@@ -27,6 +27,33 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+ADMINS = [('Test', 'test@example.com')]
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "console": {
+            "level": "INFO",
+            "class": "logging.StreamHandler",
+        },
+        "mail_admins": {
+            "level": "ERROR",
+            "class": "django.utils.log.AdminEmailHandler",
+        },
+    },
+    "loggers": {
+        "django": {"handlers": ["console", "mail_admins"], "level": "INFO",},
+        "django.server": {
+            "handlers": ["console"],
+            "level": "INFO",
+            "propagate": True, # If this is True, AdminEmailHandler gets a record where record.request is a socket
+        },
+    },
+}
+
 
 # Application definition
 

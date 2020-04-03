@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+def throw_exception(request):
+    raise Exception
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('exception', throw_exception)
 ]

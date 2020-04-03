@@ -1,0 +1,443 @@
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 03, 2020 - 20:43:38
+Django version 3.0.5, using settings 'mysite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Subject: [Django] ERROR (EXTERNAL IP): Internal Server Error: /exception
+From: root@localhost
+To: test@example.com
+Date: Fri, 03 Apr 2020 20:43:40 -0000
+Message-ID: <158594662091.8313.8899562834260354254@erythro.ghgsat.com>
+
+Internal Server Error: /exception
+
+Exception at /exception
+No exception message supplied
+
+Request Method: GET
+Request URL: http://127.0.0.1:8000/exception
+Django Version: 3.0.5
+Python Executable: /home/wellis/.pyenv/versions/exception_test/bin/python
+Python Version: 3.6.10
+Python Path: ['/home/wellis/src/exception_test/mysite', '/home/wellis/.pyen=
+v/versions/3.6.10/lib/python36.zip', '/home/wellis/.pyenv/versions/3.6.10/l=
+ib/python3.6', '/home/wellis/.pyenv/versions/3.6.10/lib/python3.6/lib-dynlo=
+ad', '/home/wellis/.pyenv/versions/exception_test/lib/python3.6/site-packag=
+es']
+Server time: Fri, 3 Apr 2020 20:43:40 +0000
+Installed Applications:
+['django.contrib.admin',
+ 'django.contrib.auth',
+ 'django.contrib.contenttypes',
+ 'django.contrib.sessions',
+ 'django.contrib.messages',
+ 'django.contrib.staticfiles']
+Installed Middleware:
+['django.middleware.security.SecurityMiddleware',
+ 'django.contrib.sessions.middleware.SessionMiddleware',
+ 'django.middleware.common.CommonMiddleware',
+ 'django.middleware.csrf.CsrfViewMiddleware',
+ 'django.contrib.auth.middleware.AuthenticationMiddleware',
+ 'django.contrib.messages.middleware.MessageMiddleware',
+ 'django.middleware.clickjacking.XFrameOptionsMiddleware']
+
+
+Traceback (most recent call last):
+  File "/home/wellis/.pyenv/versions/exception_test/lib/python3.6/site-pack=
+ages/django/core/handlers/exception.py", line 34, in inner
+    response =3D get_response(request)
+  File "/home/wellis/.pyenv/versions/exception_test/lib/python3.6/site-pack=
+ages/django/core/handlers/base.py", line 115, in _get_response
+    response =3D self.process_exception_by_middleware(e, request)
+  File "/home/wellis/.pyenv/versions/exception_test/lib/python3.6/site-pack=
+ages/django/core/handlers/base.py", line 113, in _get_response
+    response =3D wrapped_callback(request, *callback_args, **callback_kwarg=
+s)
+  File "/home/wellis/src/exception_test/mysite/mysite/urls.py", line 20, in=
+ throw_exception
+    raise Exception
+
+Exception Type: Exception at /exception
+
+Request information:
+USER: AnonymousUser
+
+GET: No GET data
+
+POST: No POST data
+
+FILES: No FILES data
+
+COOKIES:
+djdt =3D 'show'
+csrftoken =3D 'MpERT2Ib3w7qeope7rn6dVt6LPazKfwO9tH8l3hdTyAayxo9NtTH7cOw3GHu=
+7vdf'
+
+META:
+CLUTTER_IM_MODULE =3D 'xim'
+COLORTERM =3D 'truecolor'
+CONTENT_LENGTH =3D ''
+CONTENT_TYPE =3D 'text/plain'
+CSRF_COOKIE =3D 'MpERT2Ib3w7qeope7rn6dVt6LPazKfwO9tH8l3hdTyAayxo9NtTH7cOw3G=
+Hu7vdf'
+DBUS_SESSION_BUS_ADDRESS =3D 'unix:path=3D/run/user/1001/bus'
+DEFAULTS_PATH =3D '/usr/share/gconf/ubuntu.default.path'
+DESKTOP_SESSION =3D 'ubuntu'
+DISPLAY =3D ':0'
+DJANGO_SETTINGS_MODULE =3D 'mysite.settings'
+FZF_DEFAULT_COMMAND =3D 'rg --files --hidden'
+GATEWAY_INTERFACE =3D 'CGI/1.1'
+GDMSESSION =3D 'ubuntu'
+GIO_LAUNCHED_DESKTOP_FILE =3D '/home/wellis/.local/share/applications/kitty=
+.desktop'
+GIO_LAUNCHED_DESKTOP_FILE_PID =3D '7860'
+GJS_DEBUG_OUTPUT =3D 'stderr'
+GJS_DEBUG_TOPICS =3D 'JS ERROR;JS LOG'
+GNOME_DESKTOP_SESSION_ID =3D 'this-is-deprecated'
+GNOME_SHELL_SESSION_MODE =3D 'ubuntu'
+GPG_AGENT_INFO =3D '/run/user/1001/gnupg/S.gpg-agent:0:1'
+GRADLE_HOME =3D '/opt/gradle/gradle-5.4.1'
+GTK_IM_MODULE =3D 'ibus'
+GTK_MODULES =3D 'gail:atk-bridge'
+HOME =3D '/home/wellis'
+HTTP_ACCEPT =3D 'text/html,application/xhtml+xml,application/xml;q=3D0.9,im=
+age/webp,*/*;q=3D0.8'
+HTTP_ACCEPT_ENCODING =3D 'gzip, deflate'
+HTTP_ACCEPT_LANGUAGE =3D 'en-CA,en-US;q=3D0.7,en;q=3D0.3'
+HTTP_CACHE_CONTROL =3D 'max-age=3D0'
+HTTP_CONNECTION =3D 'keep-alive'
+HTTP_COOKIE =3D 'djdt=3Dshow; csrftoken=3DMpERT2Ib3w7qeope7rn6dVt6LPazKfwO9=
+tH8l3hdTyAayxo9NtTH7cOw3GHu7vdf'
+HTTP_DNT =3D '1'
+HTTP_HOST =3D '127.0.0.1:8000'
+HTTP_UPGRADE_INSECURE_REQUESTS =3D '1'
+HTTP_USER_AGENT =3D 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko=
+/20100101 Firefox/74.0'
+IM_CONFIG_PHASE =3D '2'
+KITTY_WINDOW_ID =3D '12'
+LANG =3D 'en_CA.UTF-8'
+LANGUAGE =3D 'en_CA:en'
+LESS =3D '-FRSX'
+LOGNAME =3D 'wellis'
+LSCOLORS =3D 'Gxfxcxdxbxegedabagacad'
+LS_COLORS =3D 'rs=3D0:di=3D01;34:ln=3D01;36:mh=3D00:pi=3D40;33:so=3D01;35:d=
+o=3D01;35:bd=3D40;33;01:cd=3D40;33;01:or=3D40;31;01:mi=3D00:su=3D37;41:sg=
+=3D30;43:ca=3D30;41:tw=3D30;42:ow=3D34;42:st=3D37;44:ex=3D01;32:*.tar=3D01;=
+31:*.tgz=3D01;31:*.arc=3D01;31:*.arj=3D01;31:*.taz=3D01;31:*.lha=3D01;31:*.=
+lz4=3D01;31:*.lzh=3D01;31:*.lzma=3D01;31:*.tlz=3D01;31:*.txz=3D01;31:*.tzo=
+=3D01;31:*.t7z=3D01;31:*.zip=3D01;31:*.z=3D01;31:*.Z=3D01;31:*.dz=3D01;31:*=
+.gz=3D01;31:*.lrz=3D01;31:*.lz=3D01;31:*.lzo=3D01;31:*.xz=3D01;31:*.zst=3D0=
+1;31:*.tzst=3D01;31:*.bz2=3D01;31:*.bz=3D01;31:*.tbz=3D01;31:*.tbz2=3D01;31=
+:*.tz=3D01;31:*.deb=3D01;31:*.rpm=3D01;31:*.jar=3D01;31:*.war=3D01;31:*.ear=
+=3D01;31:*.sar=3D01;31:*.rar=3D01;31:*.alz=3D01;31:*.ace=3D01;31:*.zoo=3D01=
+;31:*.cpio=3D01;31:*.7z=3D01;31:*.rz=3D01;31:*.cab=3D01;31:*.wim=3D01;31:*.=
+swm=3D01;31:*.dwm=3D01;31:*.esd=3D01;31:*.jpg=3D01;35:*.jpeg=3D01;35:*.mjpg=
+=3D01;35:*.mjpeg=3D01;35:*.gif=3D01;35:*.bmp=3D01;35:*.pbm=3D01;35:*.pgm=3D=
+01;35:*.ppm=3D01;35:*.tga=3D01;35:*.xbm=3D01;35:*.xpm=3D01;35:*.tif=3D01;35=
+:*.tiff=3D01;35:*.png=3D01;35:*.svg=3D01;35:*.svgz=3D01;35:*.mng=3D01;35:*.=
+pcx=3D01;35:*.mov=3D01;35:*.mpg=3D01;35:*.mpeg=3D01;35:*.m2v=3D01;35:*.mkv=
+=3D01;35:*.webm=3D01;35:*.ogm=3D01;35:*.mp4=3D01;35:*.m4v=3D01;35:*.mp4v=3D=
+01;35:*.vob=3D01;35:*.qt=3D01;35:*.nuv=3D01;35:*.wmv=3D01;35:*.asf=3D01;35:=
+*.rm=3D01;35:*.rmvb=3D01;35:*.flc=3D01;35:*.avi=3D01;35:*.fli=3D01;35:*.flv=
+=3D01;35:*.gl=3D01;35:*.dl=3D01;35:*.xcf=3D01;35:*.xwd=3D01;35:*.yuv=3D01;3=
+5:*.cgm=3D01;35:*.emf=3D01;35:*.ogv=3D01;35:*.ogx=3D01;35:*.aac=3D00;36:*.a=
+u=3D00;36:*.flac=3D00;36:*.m4a=3D00;36:*.mid=3D00;36:*.midi=3D00;36:*.mka=
+=3D00;36:*.mp3=3D00;36:*.mpc=3D00;36:*.ogg=3D00;36:*.ra=3D00;36:*.wav=3D00;=
+36:*.oga=3D00;36:*.opus=3D00;36:*.spx=3D00;36:*.xspf=3D00;36:'
+MANDATORY_PATH =3D '/usr/share/gconf/ubuntu.mandatory.path'
+OLDPWD =3D '/home/wellis/src/exception_test'
+PAGER =3D 'less'
+PATH =3D '/home/wellis/.pyenv/versions/exception_test/bin:/home/wellis/.pye=
+nv/libexec:/home/wellis/.pyenv/plugins/python-build/bin:/home/wellis/.pyenv=
+/plugins/pyenv-virtualenv/bin:/home/wellis/.pyenv/plugins/pyenv-update/bin:=
+/home/wellis/.pyenv/plugins/pyenv-installer/bin:/home/wellis/.pyenv/plugins=
+/pyenv-doctor/bin:/home/wellis/.pyenv/plugins/pyenv-virtualenv/shims:/home/=
+wellis/.pyenv/shims:/home/wellis/.pyenv/bin:/home/wellis/.local/kitty.app/b=
+in:/home/wellis/.local/bin:/opt/gradle/gradle-5.4.1/bin:/usr/local/sbin:/us=
+r/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap=
+/bin:/home/wellis/.fzf/bin'
+PATH_INFO =3D '/exception'
+PWD =3D '/home/wellis/src/exception_test/mysite'
+PYENV_DIR =3D '/home/wellis/src/exception_test/mysite'
+PYENV_HOOK_PATH =3D '/home/wellis/.pyenv/pyenv.d:/usr/local/etc/pyenv.d:/et=
+c/pyenv.d:/usr/lib/pyenv/hooks:/home/wellis/.pyenv/plugins/pyenv-virtualenv=
+/etc/pyenv.d:/home/wellis/.pyenv/plugins/pyenv-which-ext/etc/pyenv.d'
+PYENV_ROOT =3D '/home/wellis/.pyenv'
+PYENV_SHELL =3D 'zsh'
+PYENV_VERSION =3D 'exception_test'
+PYENV_VIRTUALENV_INIT =3D '1'
+PYENV_VIRTUAL_ENV =3D '/home/wellis/.pyenv/versions/3.6.10/envs/exception_t=
+est'
+QT4_IM_MODULE =3D 'xim'
+QT_ACCESSIBILITY =3D '1'
+QT_IM_MODULE =3D 'ibus'
+QUERY_STRING =3D ''
+REMOTE_ADDR =3D '127.0.0.1'
+REMOTE_HOST =3D ''
+REQUEST_METHOD =3D 'GET'
+RUN_MAIN =3D 'true'
+SCRIPT_NAME =3D ''
+SERVER_NAME =3D 'localhost'
+SERVER_PORT =3D '8000'
+SERVER_PROTOCOL =3D 'HTTP/1.1'
+SERVER_SOFTWARE =3D 'WSGIServer/0.2'
+SESSION_MANAGER =3D 'local/erythro:@/tmp/.ICE-unix/4211,unix/erythro:/tmp/.=
+ICE-unix/4211'
+SHELL =3D '/usr/bin/zsh'
+SHLVL =3D '1'
+SSH_AGENT_PID =3D '4481'
+SSH_AUTH_SOCK =3D '/run/user/1001/keyring/ssh'
+TEMP =3D '/tmp/user/1001'
+TEMPDIR =3D '/tmp/user/1001'
+TERM =3D 'xterm-kitty'
+TERMINFO =3D '/home/wellis/.local/kitty.app/lib/kitty/terminfo'
+TEXTDOMAIN =3D 'im-config'
+TEXTDOMAINDIR =3D '/usr/share/locale/'
+TMP =3D '/tmp/user/1001'
+TMPDIR =3D '/tmp/user/1001'
+TZ =3D 'UTC'
+USER =3D 'wellis'
+USERNAME =3D 'wellis'
+VIRTUAL_ENV =3D '/home/wellis/.pyenv/versions/3.6.10/envs/exception_test'
+VIRTUAL_ENV_DISABLE_PROMPT =3D '1'
+WINDOWID =3D '77594638'
+WINDOWPATH =3D '2'
+XAUTHORITY =3D '/run/user/1001/gdm/Xauthority'
+XDG_CONFIG_DIRS =3D '/etc/xdg/xdg-ubuntu:/etc/xdg'
+XDG_CURRENT_DESKTOP =3D 'ubuntu:GNOME'
+XDG_DATA_DIRS =3D '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib=
+/snapd/desktop'
+XDG_MENU_PREFIX =3D 'gnome-'
+XDG_RUNTIME_DIR =3D '/run/user/1001'
+XDG_SEAT =3D 'seat0'
+XDG_SESSION_DESKTOP =3D 'ubuntu'
+XDG_SESSION_ID =3D '2'
+XDG_SESSION_TYPE =3D 'x11'
+XDG_VTNR =3D '2'
+XMODIFIERS =3D '@im=3Dibus'
+ZSH =3D '/home/wellis/.oh-my-zsh'
+wsgi.errors =3D <_io.TextIOWrapper name=3D'<stderr>' mode=3D'w' encoding=3D=
+'UTF-8'>
+wsgi.file_wrapper =3D ''
+wsgi.input =3D <django.core.handlers.wsgi.LimitedStream object at 0x7f3a644=
+e0f60>
+wsgi.multiprocess =3D False
+wsgi.multithread =3D True
+wsgi.run_once =3D False
+wsgi.url_scheme =3D 'http'
+wsgi.version =3D '(1, 0)'
+
+Settings:
+Using settings module mysite.settings
+ABSOLUTE_URL_OVERRIDES =3D {}
+ADMINS =3D [('Test', 'test@example.com')]
+ALLOWED_HOSTS =3D []
+APPEND_SLASH =3D True
+AUTHENTICATION_BACKENDS =3D ['django.contrib.auth.backends.ModelBackend']
+AUTH_PASSWORD_VALIDATORS =3D '********************'
+AUTH_USER_MODEL =3D 'auth.User'
+BASE_DIR =3D '/home/wellis/src/exception_test/mysite'
+CACHES =3D {'default': {'BACKEND': 'django.core.cache.backends.locmem.LocMe=
+mCache'}}
+CACHE_MIDDLEWARE_ALIAS =3D 'default'
+CACHE_MIDDLEWARE_KEY_PREFIX =3D '********************'
+CACHE_MIDDLEWARE_SECONDS =3D 600
+CSRF_COOKIE_AGE =3D 31449600
+CSRF_COOKIE_DOMAIN =3D None
+CSRF_COOKIE_HTTPONLY =3D False
+CSRF_COOKIE_NAME =3D 'csrftoken'
+CSRF_COOKIE_PATH =3D '/'
+CSRF_COOKIE_SAMESITE =3D 'Lax'
+CSRF_COOKIE_SECURE =3D False
+CSRF_FAILURE_VIEW =3D 'django.views.csrf.csrf_failure'
+CSRF_HEADER_NAME =3D 'HTTP_X_CSRFTOKEN'
+CSRF_TRUSTED_ORIGINS =3D []
+CSRF_USE_SESSIONS =3D False
+DATABASES =3D {'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': =
+'/home/wellis/src/exception_test/mysite/db.sqlite3', 'ATOMIC_REQUESTS': Fal=
+se, 'AUTOCOMMIT': True, 'CONN_MAX_AGE': 0, 'OPTIONS': {}, 'TIME_ZONE': None=
+, 'USER': '', 'PASSWORD': '********************', 'HOST': '', 'PORT': '', '=
+TEST': {'CHARSET': None, 'COLLATION': None, 'NAME': None, 'MIRROR': None}}}
+DATABASE_ROUTERS =3D []
+DATA_UPLOAD_MAX_MEMORY_SIZE =3D 2621440
+DATA_UPLOAD_MAX_NUMBER_FIELDS =3D 1000
+DATETIME_FORMAT =3D 'N j, Y, P'
+DATETIME_INPUT_FORMATS =3D ['%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M:%S.%f', '%=
+Y-%m-%d %H:%M', '%Y-%m-%d', '%m/%d/%Y %H:%M:%S', '%m/%d/%Y %H:%M:%S.%f', '%=
+m/%d/%Y %H:%M', '%m/%d/%Y', '%m/%d/%y %H:%M:%S', '%m/%d/%y %H:%M:%S.%f', '%=
+m/%d/%y %H:%M', '%m/%d/%y']
+DATE_FORMAT =3D 'N j, Y'
+DATE_INPUT_FORMATS =3D ['%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y', '%b %d %Y', '%b=
+ %d, %Y', '%d %b %Y', '%d %b, %Y', '%B %d %Y', '%B %d, %Y', '%d %B %Y', '%d=
+ %B, %Y']
+DEBUG =3D True
+DEBUG_PROPAGATE_EXCEPTIONS =3D False
+DECIMAL_SEPARATOR =3D '.'
+DEFAULT_CHARSET =3D 'utf-8'
+DEFAULT_EXCEPTION_REPORTER_FILTER =3D 'django.views.debug.SafeExceptionRepo=
+rterFilter'
+DEFAULT_FILE_STORAGE =3D 'django.core.files.storage.FileSystemStorage'
+DEFAULT_FROM_EMAIL =3D 'webmaster@localhost'
+DEFAULT_INDEX_TABLESPACE =3D ''
+DEFAULT_TABLESPACE =3D ''
+DISALLOWED_USER_AGENTS =3D []
+EMAIL_BACKEND =3D 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST =3D 'localhost'
+EMAIL_HOST_PASSWORD =3D '********************'
+EMAIL_HOST_USER =3D ''
+EMAIL_PORT =3D 25
+EMAIL_SSL_CERTFILE =3D None
+EMAIL_SSL_KEYFILE =3D '********************'
+EMAIL_SUBJECT_PREFIX =3D '[Django] '
+EMAIL_TIMEOUT =3D None
+EMAIL_USE_LOCALTIME =3D False
+EMAIL_USE_SSL =3D False
+EMAIL_USE_TLS =3D False
+FILE_CHARSET =3D 'utf-8'
+FILE_UPLOAD_DIRECTORY_PERMISSIONS =3D None
+FILE_UPLOAD_HANDLERS =3D ['django.core.files.uploadhandler.MemoryFileUpload=
+Handler', 'django.core.files.uploadhandler.TemporaryFileUploadHandler']
+FILE_UPLOAD_MAX_MEMORY_SIZE =3D 2621440
+FILE_UPLOAD_PERMISSIONS =3D 420
+FILE_UPLOAD_TEMP_DIR =3D None
+FIRST_DAY_OF_WEEK =3D 0
+FIXTURE_DIRS =3D []
+FORCE_SCRIPT_NAME =3D None
+FORMAT_MODULE_PATH =3D None
+FORM_RENDERER =3D 'django.forms.renderers.DjangoTemplates'
+IGNORABLE_404_URLS =3D []
+INSTALLED_APPS =3D ['django.contrib.admin', 'django.contrib.auth', 'django.=
+contrib.contenttypes', 'django.contrib.sessions', 'django.contrib.messages'=
+, 'django.contrib.staticfiles']
+INTERNAL_IPS =3D []
+LANGUAGES =3D [('af', 'Afrikaans'), ('ar', 'Arabic'), ('ast', 'Asturian'), =
+('az', 'Azerbaijani'), ('bg', 'Bulgarian'), ('be', 'Belarusian'), ('bn', 'B=
+engali'), ('br', 'Breton'), ('bs', 'Bosnian'), ('ca', 'Catalan'), ('cs', 'C=
+zech'), ('cy', 'Welsh'), ('da', 'Danish'), ('de', 'German'), ('dsb', 'Lower=
+ Sorbian'), ('el', 'Greek'), ('en', 'English'), ('en-au', 'Australian Engli=
+sh'), ('en-gb', 'British English'), ('eo', 'Esperanto'), ('es', 'Spanish'),=
+ ('es-ar', 'Argentinian Spanish'), ('es-co', 'Colombian Spanish'), ('es-mx'=
+, 'Mexican Spanish'), ('es-ni', 'Nicaraguan Spanish'), ('es-ve', 'Venezuela=
+n Spanish'), ('et', 'Estonian'), ('eu', 'Basque'), ('fa', 'Persian'), ('fi'=
+, 'Finnish'), ('fr', 'French'), ('fy', 'Frisian'), ('ga', 'Irish'), ('gd', =
+'Scottish Gaelic'), ('gl', 'Galician'), ('he', 'Hebrew'), ('hi', 'Hindi'), =
+('hr', 'Croatian'), ('hsb', 'Upper Sorbian'), ('hu', 'Hungarian'), ('hy', '=
+Armenian'), ('ia', 'Interlingua'), ('id', 'Indonesian'), ('io', 'Ido'), ('i=
+s', 'Icelandic'), ('it', 'Italian'), ('ja', 'Japanese'), ('ka', 'Georgian')=
+, ('kab', 'Kabyle'), ('kk', 'Kazakh'), ('km', 'Khmer'), ('kn', 'Kannada'), =
+('ko', 'Korean'), ('lb', 'Luxembourgish'), ('lt', 'Lithuanian'), ('lv', 'La=
+tvian'), ('mk', 'Macedonian'), ('ml', 'Malayalam'), ('mn', 'Mongolian'), ('=
+mr', 'Marathi'), ('my', 'Burmese'), ('nb', 'Norwegian Bokm=C3=A5l'), ('ne',=
+ 'Nepali'), ('nl', 'Dutch'), ('nn', 'Norwegian Nynorsk'), ('os', 'Ossetic')=
+, ('pa', 'Punjabi'), ('pl', 'Polish'), ('pt', 'Portuguese'), ('pt-br', 'Bra=
+zilian Portuguese'), ('ro', 'Romanian'), ('ru', 'Russian'), ('sk', 'Slovak'=
+), ('sl', 'Slovenian'), ('sq', 'Albanian'), ('sr', 'Serbian'), ('sr-latn', =
+'Serbian Latin'), ('sv', 'Swedish'), ('sw', 'Swahili'), ('ta', 'Tamil'), ('=
+te', 'Telugu'), ('th', 'Thai'), ('tr', 'Turkish'), ('tt', 'Tatar'), ('udm',=
+ 'Udmurt'), ('uk', 'Ukrainian'), ('ur', 'Urdu'), ('uz', 'Uzbek'), ('vi', 'V=
+ietnamese'), ('zh-hans', 'Simplified Chinese'), ('zh-hant', 'Traditional Ch=
+inese')]
+LANGUAGES_BIDI =3D ['he', 'ar', 'fa', 'ur']
+LANGUAGE_CODE =3D 'en-us'
+LANGUAGE_COOKIE_AGE =3D None
+LANGUAGE_COOKIE_DOMAIN =3D None
+LANGUAGE_COOKIE_HTTPONLY =3D False
+LANGUAGE_COOKIE_NAME =3D 'django_language'
+LANGUAGE_COOKIE_PATH =3D '/'
+LANGUAGE_COOKIE_SAMESITE =3D None
+LANGUAGE_COOKIE_SECURE =3D False
+LOCALE_PATHS =3D []
+LOGGING =3D {'version': 1, 'disable_existing_loggers': False, 'handlers': {=
+'console': {'level': 'INFO', 'class': 'logging.StreamHandler'}, 'mail_admin=
+s': {'level': 'ERROR', 'class': 'django.utils.log.AdminEmailHandler'}}, 'lo=
+ggers': {'django': {'handlers': ['console', 'mail_admins'], 'level': 'INFO'=
+}, 'django.server': {'handlers': ['console'], 'level': 'INFO', 'propagate':=
+ False}}}
+LOGGING_CONFIG =3D 'logging.config.dictConfig'
+LOGIN_REDIRECT_URL =3D '/accounts/profile/'
+LOGIN_URL =3D '/accounts/login/'
+LOGOUT_REDIRECT_URL =3D None
+MANAGERS =3D []
+MEDIA_ROOT =3D ''
+MEDIA_URL =3D ''
+MESSAGE_STORAGE =3D 'django.contrib.messages.storage.fallback.FallbackStora=
+ge'
+MIDDLEWARE =3D ['django.middleware.security.SecurityMiddleware', 'django.co=
+ntrib.sessions.middleware.SessionMiddleware', 'django.middleware.common.Com=
+monMiddleware', 'django.middleware.csrf.CsrfViewMiddleware', 'django.contri=
+b.auth.middleware.AuthenticationMiddleware', 'django.contrib.messages.middl=
+eware.MessageMiddleware', 'django.middleware.clickjacking.XFrameOptionsMidd=
+leware']
+MIGRATION_MODULES =3D {}
+MONTH_DAY_FORMAT =3D 'F j'
+NUMBER_GROUPING =3D 0
+PASSWORD_HASHERS =3D '********************'
+PASSWORD_RESET_TIMEOUT_DAYS =3D '********************'
+PREPEND_WWW =3D False
+ROOT_URLCONF =3D 'mysite.urls'
+SECRET_KEY =3D '********************'
+SECURE_BROWSER_XSS_FILTER =3D False
+SECURE_CONTENT_TYPE_NOSNIFF =3D True
+SECURE_HSTS_INCLUDE_SUBDOMAINS =3D False
+SECURE_HSTS_PRELOAD =3D False
+SECURE_HSTS_SECONDS =3D 0
+SECURE_PROXY_SSL_HEADER =3D None
+SECURE_REDIRECT_EXEMPT =3D []
+SECURE_REFERRER_POLICY =3D None
+SECURE_SSL_HOST =3D None
+SECURE_SSL_REDIRECT =3D False
+SERVER_EMAIL =3D 'root@localhost'
+SESSION_CACHE_ALIAS =3D 'default'
+SESSION_COOKIE_AGE =3D 1209600
+SESSION_COOKIE_DOMAIN =3D None
+SESSION_COOKIE_HTTPONLY =3D True
+SESSION_COOKIE_NAME =3D 'sessionid'
+SESSION_COOKIE_PATH =3D '/'
+SESSION_COOKIE_SAMESITE =3D 'Lax'
+SESSION_COOKIE_SECURE =3D False
+SESSION_ENGINE =3D 'django.contrib.sessions.backends.db'
+SESSION_EXPIRE_AT_BROWSER_CLOSE =3D False
+SESSION_FILE_PATH =3D None
+SESSION_SAVE_EVERY_REQUEST =3D False
+SESSION_SERIALIZER =3D 'django.contrib.sessions.serializers.JSONSerializer'
+SETTINGS_MODULE =3D 'mysite.settings'
+SHORT_DATETIME_FORMAT =3D 'm/d/Y P'
+SHORT_DATE_FORMAT =3D 'm/d/Y'
+SIGNING_BACKEND =3D 'django.core.signing.TimestampSigner'
+SILENCED_SYSTEM_CHECKS =3D []
+STATICFILES_DIRS =3D []
+STATICFILES_FINDERS =3D ['django.contrib.staticfiles.finders.FileSystemFind=
+er', 'django.contrib.staticfiles.finders.AppDirectoriesFinder']
+STATICFILES_STORAGE =3D 'django.contrib.staticfiles.storage.StaticFilesStor=
+age'
+STATIC_ROOT =3D None
+STATIC_URL =3D '/static/'
+TEMPLATES =3D [{'BACKEND': 'django.template.backends.django.DjangoTemplates=
+', 'DIRS': [], 'APP_DIRS': True, 'OPTIONS': {'context_processors': ['django=
+.template.context_processors.debug', 'django.template.context_processors.re=
+quest', 'django.contrib.auth.context_processors.auth', 'django.contrib.mess=
+ages.context_processors.messages']}}]
+TEST_NON_SERIALIZED_APPS =3D []
+TEST_RUNNER =3D 'django.test.runner.DiscoverRunner'
+THOUSAND_SEPARATOR =3D ','
+TIME_FORMAT =3D 'P'
+TIME_INPUT_FORMATS =3D ['%H:%M:%S', '%H:%M:%S.%f', '%H:%M']
+TIME_ZONE =3D 'UTC'
+USE_I18N =3D True
+USE_L10N =3D True
+USE_THOUSAND_SEPARATOR =3D False
+USE_TZ =3D True
+USE_X_FORWARDED_HOST =3D False
+USE_X_FORWARDED_PORT =3D False
+WSGI_APPLICATION =3D 'mysite.wsgi.application'
+X_FRAME_OPTIONS =3D 'DENY'
+YEAR_MONTH_FORMAT =3D 'F Y'
+
+
+
+-------------------------------------------------------------------------------
